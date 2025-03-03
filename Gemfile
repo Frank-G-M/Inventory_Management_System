@@ -29,6 +29,21 @@ gem "bootsnap", require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin Ajax possible
 # gem "rack-cors"
 
+# Gem para permitir la creacion y migracion de DB
+gem 'psych', '~> 4.0.3'
+
+# Gem para conectar con Postgresql
+gem 'pg', '~> 1.1'
+
+# Gem para la validacion de archvios multimedia
+gem 'active_storage_validations'
+
+# Gem ByBug
+gem 'byebug'
+
+# Gem para la estructura de datos en los modelos
+gem 'annotate'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mswin mswin64 mingw x64_mingw ], require: "debug/prelude"
