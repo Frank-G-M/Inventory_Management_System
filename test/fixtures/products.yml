@@ -1,0 +1,30 @@
+# == Schema Information
+#
+# Table name: products
+#
+#  id          :integer          not null, primary key
+#  name        :string
+#  description :string
+#  price       :decimal(, )
+#  stock       :integer
+#  sku         :string
+#  image_url   :string
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
+one:
+  name: MyString
+  description: MyString
+  price: 9.99
+  stock: 1
+  sku: MyString
+  image_url: MyString
+
+two:
+  name: MyString
+  description: MyString
+  price: 9.99
+  stock: 1
+  sku: MyString
+  image_url: MyString

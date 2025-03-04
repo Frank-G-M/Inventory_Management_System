@@ -1,0 +1,21 @@
+# == Schema Information
+#
+# Table name: reports
+#
+#  id           :integer          not null, primary key
+#  report_type  :string
+#  generated_at :datetime
+#  details      :text
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+
+one:
+  report_type: MyString
+  generated_at: 2025-03-03 12:16:55
+  details: MyText
+
+two:
+  report_type: MyString
+  generated_at: 2025-03-03 12:16:55
+  details: MyText

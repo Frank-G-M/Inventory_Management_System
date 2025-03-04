@@ -38,7 +38,7 @@ gem 'pg', '~> 1.1'
 # Gem para la validacion de archvios multimedia
 gem 'active_storage_validations'
 
-# Gem ByBug
+# Gem ByeBug
 gem 'byebug'
 
 # Gem para la estructura de datos en los modelos
