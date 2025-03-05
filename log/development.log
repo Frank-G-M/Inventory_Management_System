@@ -36,3 +36,446 @@ Migrating to CreateReports (20250303171655)
   [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/create" for 127.0.0.1 at 2025-03-03 20:27:46 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/api/create"):
+  
+  [1m[36mUser Load (17.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/api/create" for 127.0.0.1 at 2025-03-03 20:28:27 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/api/create"):
+  
+Started POST "/api/create" for 127.0.0.1 at 2025-03-03 20:28:48 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/api/create"):
+  
+Started POST "/api/create" for 127.0.0.1 at 2025-03-03 20:29:58 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/api/create"):
+  
+Started POST "/api/users/create" for 127.0.0.1 at 2025-03-03 20:30:25 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/api/users/create"):
+  
+Started GET "/api/users/create/" for 127.0.0.1 at 2025-03-03 20:30:34 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/users/create"):
+  
+Started GET "/" for ::1 at 2025-03-03 20:32:02 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/RailsInstaller/Ruby3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.2.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/RailsInstaller/Ruby3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.2.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 175ms (Views: 29.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/icon.png" for ::1 at 2025-03-03 20:32:03 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/icon.png"):
+  
+Started POST "/api/users/create" for 127.0.0.1 at 2025-03-03 20:34:26 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/api/users/create"):
+  
+Started GET "/api/users" for 127.0.0.1 at 2025-03-03 20:35:17 -0500
+  
+SyntaxError (C:/Users/Usuario/Desktop/Inventory Management System/Inventory_Management_System/app/controllers/api/users_controller.rb:13: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/users_controller.rb:13: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/users" for 127.0.0.1 at 2025-03-03 20:35:39 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (C:/Users/Usuario/Desktop/Inventory Management System/Inventory_Management_System/app/controllers/api/users_controller.rb:13: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/users_controller.rb:13: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/users/create" for 127.0.0.1 at 2025-03-03 20:37:19 -0500
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Api::UsersController):
+  
+actionpack (7.2.2.1) lib/abstract_controller/base.rb:158:in `process'
+actionpack (7.2.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (7.2.2.1) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (7.2.2.1) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (7.2.2.1) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (7.2.2.1) lib/action_dispatch/routing/route_set.rb:896:in `call'
+rack (3.1.10) lib/rack/etag.rb:29:in `call'
+rack (3.1.10) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.10) lib/rack/head.rb:15:in `call'
+activerecord (7.2.2.1) lib/active_record/migration.rb:674:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.2.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.2.1) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.10) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.2.1) lib/rails/engine.rb:535:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started POST "/api/users/create" for 127.0.0.1 at 2025-03-03 20:37:44 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/api/users/create"):
+  
+Started POST "/api/users/create" for 127.0.0.1 at 2025-03-03 20:43:31 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::UsersController#create as */*
+  Parameters: {"name"=>"Juan Pérez", "email"=>"[FILTERED]", "password"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "name"=>"Juan Pérez"}}
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 4.5ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password' for User.
+
+          raise UnknownAttributeError.new(self, k.to_s)
+          ^^^^^):
+
+Causes:
+NoMethodError (undefined method `password=' for #<User id: nil, email: [FILTERED], password_digest: nil, role: nil, name: "Juan Pérez", created_at: nil, updated_at: nil>
+Did you mean?  password_digest=)
+  
+app/controllers/api/users_controller.rb:7:in `create'
+Started POST "/api/users/create" for 127.0.0.1 at 2025-03-03 20:44:25 -0500
+Processing by Api::UsersController#create as */*
+  Parameters: {"name"=>"Juan Pérez", "email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "name"=>"Juan Pérez"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password' for User.
+
+          raise UnknownAttributeError.new(self, k.to_s)
+          ^^^^^):
+
+Causes:
+NoMethodError (undefined method `password=' for #<User id: nil, email: [FILTERED], password_digest: nil, role: nil, name: "Juan Pérez", created_at: nil, updated_at: nil>
+Did you mean?  password_digest=)
+  
+app/controllers/api/users_controller.rb:7:in `create'
+Started POST "/api/users/create" for 127.0.0.1 at 2025-03-03 20:44:46 -0500
+Processing by Api::UsersController#create as */*
+  Parameters: {"name"=>"Juan Pérez", "email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "name"=>"Juan Pérez"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password' for User.
+
+          raise UnknownAttributeError.new(self, k.to_s)
+          ^^^^^):
+
+Causes:
+NoMethodError (undefined method `password=' for #<User id: nil, email: [FILTERED], password_digest: nil, role: nil, name: "Juan Pérez", created_at: nil, updated_at: nil>
+Did you mean?  password_digest=)
+  
+app/controllers/api/users_controller.rb:7:in `create'
+Started POST "/api/users/create" for 127.0.0.1 at 2025-03-03 20:45:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::UsersController#create as */*
+  Parameters: {"name"=>"Juan Pérez", "email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "name"=>"Juan Pérez"}}
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 3.3ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password' for User.
+
+          raise UnknownAttributeError.new(self, k.to_s)
+          ^^^^^):
+
+Causes:
+NoMethodError (undefined method `password=' for #<User id: nil, email: [FILTERED], password_digest: nil, role: nil, name: "Juan Pérez", created_at: nil, updated_at: nil>
+Did you mean?  password_digest=)
+  
+app/controllers/api/users_controller.rb:7:in `create'
+Started POST "/api/users/create" for 127.0.0.1 at 2025-03-03 20:46:11 -0500
+Processing by Api::UsersController#create as */*
+  Parameters: {"name"=>"Juan Pérez", "email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "name"=>"Juan Pérez"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.8ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password' for User.
+
+          raise UnknownAttributeError.new(self, k.to_s)
+          ^^^^^):
+
+Causes:
+NoMethodError (undefined method `password=' for #<User id: nil, email: [FILTERED], password_digest: nil, role: nil, name: "Juan Pérez", created_at: nil, updated_at: nil>
+Did you mean?  password_digest=)
+  
+app/controllers/api/users_controller.rb:7:in `create'
+Started POST "/api/users/create" for 127.0.0.1 at 2025-03-03 20:46:58 -0500
+Processing by Api::UsersController#create as */*
+  Parameters: {"name"=>"Juan Pérez", "email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "name"=>"Juan Pérez"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/users_controller.rb:8:in `create'
+  [1m[36mUser Create (2.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "role", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["email", "[FILTERED]"], ["password_digest", "[FILTERED]"], ["role", nil], ["name", "Juan Pérez"], ["created_at", "2025-03-04 01:47:00.164803"], ["updated_at", "2025-03-04 01:47:00.164803"]]
+  ↳ app/controllers/api/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (8.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/users_controller.rb:8:in `create'
+Completed 200 OK in 19ms (Views: 0.6ms | ActiveRecord: 13.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/users/create" for 127.0.0.1 at 2025-03-03 20:49:50 -0500
+Processing by Api::UsersController#create as */*
+  Parameters: {"_json"=>[{"email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>"dueño", "name"=>"María Gómez"}, {"email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>"empleado", "name"=>"Carlos López"}, {"email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>"administrador", "name"=>"Laura Fernández"}, {"email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>"empleado", "name"=>"Pedro Martínez"}, {"email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>"dueño", "name"=>"Ana Rodríguez"}, {"email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>"administrador", "name"=>"Luis Sánchez"}, {"email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>"empleado", "name"=>"Elena Torres"}, {"email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>"dueño", "name"=>"Diego Ruiz"}, {"email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>"empleado", "name"=>"Sofía Méndez"}], "user"=>{}}
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/users_controller.rb:8:in `create'
+  [1m[36mUser Create (8.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "role", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["email", "[FILTERED]"], ["password_digest", "[FILTERED]"], ["role", nil], ["name", nil], ["created_at", "2025-03-04 01:49:50.608530"], ["updated_at", "2025-03-04 01:49:50.608530"]]
+  ↳ app/controllers/api/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/users_controller.rb:8:in `create'
+Completed 200 OK in 41ms (Views: 2.9ms | ActiveRecord: 9.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mUser Load (28.3ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/api/users/3" for 127.0.0.1 at 2025-03-03 20:57:24 -0500
+  
+SyntaxError (C:/Users/Usuario/Desktop/Inventory Management System/Inventory_Management_System/config/routes.rb:4: syntax error, unexpected end-of-input, expecting `end'):
+  
+config/routes.rb:4: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/users/3" for 127.0.0.1 at 2025-03-03 20:57:51 -0500
+Processing by Api::UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users/1" for 127.0.0.1 at 2025-03-03 20:58:07 -0500
+Processing by Api::UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/users/create" for 127.0.0.1 at 2025-03-03 20:58:31 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/api/users/create"):
+  
+Started POST "/api/users/create" for 127.0.0.1 at 2025-03-03 20:59:17 -0500
+Processing by Api::UsersController#create as */*
+  Parameters: {"email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>"dueño", "name"=>"María Gómez", "user"=>{"email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>"dueño", "name"=>"María Gómez"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/users_controller.rb:8:in `create'
+  [1m[36mUser Create (21.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "role", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["email", "[FILTERED]"], ["password_digest", "[FILTERED]"], ["role", nil], ["name", "María Gómez"], ["created_at", "2025-03-04 01:59:18.707242"], ["updated_at", "2025-03-04 01:59:18.707242"]]
+  ↳ app/controllers/api/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (9.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/users_controller.rb:8:in `create'
+Completed 200 OK in 52ms (Views: 1.0ms | ActiveRecord: 30.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mUser Load (9.2ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/api/users/3" for 127.0.0.1 at 2025-03-03 21:00:36 -0500
+Processing by Api::UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users/3" for 127.0.0.1 at 2025-03-03 21:01:45 -0500
+Processing by Api::UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users/3" for 127.0.0.1 at 2025-03-03 21:02:28 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users/1" for 127.0.0.1 at 2025-03-03 21:02:41 -0500
+Processing by Api::UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users/1" for 127.0.0.1 at 2025-03-03 21:05:40 -0500
+Processing by Api::UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mUser Load (16.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Started GET "/api/users/3" for 127.0.0.1 at 2025-03-03 21:07:20 -0500
+Processing by Api::UsersController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:25:in `set_user'
+Completed 200 OK in 64ms (Views: 1.4ms | ActiveRecord: 7.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/users/create" for 127.0.0.1 at 2025-03-03 21:10:37 -0500
+Processing by Api::UsersController#create as */*
+  Parameters: {"id"=>3, "email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>nil, "name"=>"Carlos López", "user"=>{"id"=>3, "email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>nil, "name"=>"Carlos López"}}
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/users_controller.rb:10:in `create'
+  [1m[36mUser Create (12.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "role", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["email", "[FILTERED]"], ["password_digest", "[FILTERED]"], ["role", nil], ["name", "Carlos López"], ["created_at", "2025-03-04 02:10:37.326444"], ["updated_at", "2025-03-04 02:10:37.326444"]]
+  ↳ app/controllers/api/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (8.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/users_controller.rb:10:in `create'
+Completed 200 OK in 63ms (Views: 2.9ms | ActiveRecord: 23.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users/5" for 127.0.0.1 at 2025-03-03 21:11:23 -0500
+Processing by Api::UsersController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:25:in `set_user'
+Filter chain halted as :set_user rendered or redirected
+Completed 404 Not Found in 118ms (Views: 0.6ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users/4" for 127.0.0.1 at 2025-03-03 21:11:26 -0500
+Processing by Api::UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:25:in `set_user'
+Completed 200 OK in 8ms (Views: 1.8ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started PUT "/api/users/update/4" for 127.0.0.1 at 2025-03-03 21:14:04 -0500
+  
+ActionController::RoutingError (No route matches [PUT] "/api/users/update/4"):
+  
+Started PUT "/api/users/update/4" for 127.0.0.1 at 2025-03-03 21:16:07 -0500
+  
+ActionController::RoutingError (No route matches [PUT] "/api/users/update/4"):
+  
+Started PUT "/api/users/update/4" for 127.0.0.1 at 2025-03-03 21:16:56 -0500
+  
+ActionController::RoutingError (No route matches [PUT] "/api/users/update/4"):
+  
+Started PUT "/api/users/update/4" for 127.0.0.1 at 2025-03-04 19:03:31 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [PUT] "/api/users/update/4"):
+  
+Started PUT "/api/users/update/4" for 127.0.0.1 at 2025-03-04 19:05:43 -0500
+  
+ActionController::RoutingError (No route matches [PUT] "/api/users/update/4"):
+  
+Started PUT "/api/users/update/4" for 127.0.0.1 at 2025-03-04 19:06:03 -0500
+  
+ActionController::RoutingError (No route matches [PUT] "/api/users/update/4"):
+  
+Started PUT "/api/users/update/4" for 127.0.0.1 at 2025-03-04 19:07:38 -0500
+  
+ActionController::RoutingError (No route matches [PUT] "/api/users/update/4"):
+  
+Started PUT "/api/users/update/4" for 127.0.0.1 at 2025-03-04 19:07:56 -0500
+  
+ActionController::RoutingError (No route matches [PUT] "/api/users/update/4"):
+  
+Started PUT "/api/users/update/4" for 127.0.0.1 at 2025-03-04 19:08:51 -0500
+  
+ActionController::RoutingError (No route matches [PUT] "/api/users/update/4"):
+  
+Started PUT "/api/users/update/4" for 127.0.0.1 at 2025-03-04 19:09:33 -0500
+  
+ActionController::RoutingError (No route matches [PUT] "/api/users/update/4"):
+  
+Started GET "/api/users/4" for 127.0.0.1 at 2025-03-04 19:10:07 -0500
+Processing by Api::UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:33:in `set_user'
+Completed 200 OK in 79ms (Views: 1.2ms | ActiveRecord: 6.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started PUT "/api/users/update/4" for 127.0.0.1 at 2025-03-04 19:10:53 -0500
+  
+ActionController::RoutingError (No route matches [PUT] "/api/users/update/4"):
+  
+Started PATCH "/api/users/update/4" for 127.0.0.1 at 2025-03-04 19:12:59 -0500
+  
+ActionController::RoutingError (No route matches [PATCH] "/api/users/update/4"):
+  
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    "id": 4,
+    "email": "carlos.lopez@example.com",
+    "password_digest": "password123",
+    "role": "empleado",
+    "name": "Carlos López",
+}
+Started PUT "/api/users/4" for 127.0.0.1 at 2025-03-04 19:13:27 -0500
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    "id": 4,
+    "email": "carlos.lopez@example.com",
+    "password_digest": "password123",
+    "role": "empleado",
+    "name": "Carlos López",
+}
+Processing by Api::UsersController#update as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+
+Causes:
+JSON::ParserError (expected object key, got: '}')
+  
+app/controllers/api/users_controller.rb:33:in `set_user'
+Started PUT "/api/users/4" for 127.0.0.1 at 2025-03-04 19:14:13 -0500
+Processing by Api::UsersController#update as */*
+  Parameters: {"id"=>"4", "email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>"empleado", "name"=>"Carlos López", "user"=>{"id"=>"4", "email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>"empleado", "name"=>"Carlos López"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:33:in `set_user'
+[31mUnpermitted parameters: :id, :role. Context: { controller: Api::UsersController, action: update, request: #<ActionDispatch::Request:0x0000022a5005fce0>, params: {"id"=>"4", "email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>"empleado", "name"=>"Carlos López", "controller"=>"api/users", "action"=>"update", "user"=>{"id"=>"4", "email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>"empleado", "name"=>"Carlos López"}} }[0m
+Completed 200 OK in 12ms (Views: 0.9ms | ActiveRecord: 3.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users/4" for 127.0.0.1 at 2025-03-04 19:14:20 -0500
+Processing by Api::UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:33:in `set_user'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started PATCH "/api/users/4" for 127.0.0.1 at 2025-03-04 19:14:33 -0500
+Processing by Api::UsersController#update as */*
+  Parameters: {"id"=>"4", "email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>"empleado", "name"=>"Carlos López", "user"=>{"id"=>"4", "email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>"empleado", "name"=>"Carlos López"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:33:in `set_user'
+[31mUnpermitted parameters: :id, :role. Context: { controller: Api::UsersController, action: update, request: #<ActionDispatch::Request:0x0000022a50217c68>, params: {"id"=>"4", "email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>"empleado", "name"=>"Carlos López", "controller"=>"api/users", "action"=>"update", "user"=>{"id"=>"4", "email"=>"[FILTERED]", "password_digest"=>"[FILTERED]", "role"=>"empleado", "name"=>"Carlos López"}} }[0m
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users/4" for 127.0.0.1 at 2025-03-04 19:14:37 -0500
+Processing by Api::UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:33:in `set_user'
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
