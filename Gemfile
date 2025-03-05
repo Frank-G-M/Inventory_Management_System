@@ -30,7 +30,7 @@ gem "bootsnap", require: false
 # gem "rack-cors"
 
 # Gem para permitir la creacion y migracion de DB
-gem 'psych', '~> 4.0.3'
+gem 'psych', '~> 5.2.3'
 
 # Gem para conectar con Postgresql
 gem 'pg', '~> 1.1'
